@@ -24,6 +24,7 @@ namespace ProjetoAula03.Repositories
                     INSERT INTO FUNCIONARIO(ID, NOME, MATRICULA, CPF, DATAADMISSAO, EMPRESAID)
                     VALUES(@Id, @Nome, @Matricula, @Cpf, @DataAdmissao, @EmpresaId)
                 ";
+            Console.WriteLine(sql);
 
             using (var connection = new SqlConnection(_connectionString))
             {
